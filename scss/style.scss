@@ -1,0 +1,141 @@
+$black:black;
+$const:orange;
+@import "_mixins.scss";
+@include button;
+@include header;
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    font-family: 'play';
+}
+
+%dfjc-c{
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    &_left{
+        justify-content: flex-start;
+        margin-left: 100px;
+    }
+    &_right{
+        justify-content: flex-end;
+    }
+    &__link{
+        text-transform: capitalize;
+        font-size: 1em;
+        color:$black;
+        text-decoration: none;
+        margin:15px;
+        margin-left: 5px;
+    }
+}
+
+.start-menu{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        width: 50%;
+        @extend %dfjc-c;
+        align-content: center;
+        align-items: center;
+    }
+    &__right{
+        @extend %dfjc-c;
+        width: 50%;
+    }
+    &__img{
+        height: 150px;
+        width: 200px;
+        background-color: aqua;
+    }
+    &__element{
+        display: flex;
+    }
+    &__text{
+        width: 200px;
+        height: 150px;
+        @extend %dfjc-c;
+        align-items: center;
+    }
+    &__form{
+        width: 100%;
+        height: 100%;
+        max-width: 330px;
+        max-height: 350px;
+        background-color: thistle;
+        p{
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+    }
+    &__castom{
+            margin-top: 15px;
+            
+            @extend %dfjc-c;
+        }
+    &__form > h1{
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.info-block{
+    &__header{
+        text-align: center;
+    }
+    &__content{
+        @extend %dfjc-c;
+    }
+    &__text{
+        margin-top: 20px;
+        text-align: center;
+        max-width: 350px;
+    }
+}
+
+.amazing-img{
+    display: flex;
+    margin-top: 20px;
+    @extend %dfjc-c;
+    justify-content: space-evenly;
+    :hover{
+            opacity: 1;
+            
+            cursor: pointer;
+            p {
+                opacity: 1;
+            }
+        }
+    &__img{
+        background: url('../img/IMG_0339.PNG') no-repeat center top; // Тут должен быть нормальный путь
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        p {
+            background-color:rgba(0,0,0,.3);
+            height: 200px;
+            opacity: 0;
+            text-align: center;
+            color: #fff;
+            transition: .5s ease-in-out;
+        }
+
+        
+    }
+
+}

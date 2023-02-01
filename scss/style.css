@@ -1,0 +1,137 @@
+.Button-text {
+  font-size: 1em;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  border-radius: 40px;
+  border: 1px solid orange;
+  background: none;
+}
+
+header {
+  box-shadow: 0px 0px 9px -4px black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  font-family: "play";
+}
+
+.amazing-img, .info-block__content, .start-menu__castom, .start-menu__text, .start-menu__right, .start-menu__left {
+  display: flex;
+  justify-content: center;
+}
+
+.main-menu {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.main-menu_left {
+  justify-content: flex-start;
+  margin-left: 100px;
+}
+.main-menu_right {
+  justify-content: flex-end;
+}
+.main-menu__link {
+  text-transform: capitalize;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  margin: 15px;
+  margin-left: 5px;
+}
+
+.start-menu {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.start-menu__left {
+  width: 50%;
+  align-content: center;
+  align-items: center;
+}
+.start-menu__right {
+  width: 50%;
+}
+.start-menu__img {
+  height: 150px;
+  width: 200px;
+  background-color: aqua;
+}
+.start-menu__element {
+  display: flex;
+}
+.start-menu__text {
+  width: 200px;
+  height: 150px;
+  align-items: center;
+}
+.start-menu__form {
+  width: 100%;
+  height: 100%;
+  max-width: 330px;
+  max-height: 350px;
+  background-color: thistle;
+}
+.start-menu__form p {
+  margin-top: 10px;
+  text-align: center;
+}
+.start-menu__castom {
+  margin-top: 15px;
+}
+.start-menu__form > h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.info-block__header {
+  text-align: center;
+}
+.info-block__text {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 350px;
+}
+
+.amazing-img {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.amazing-img :hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.amazing-img :hover p {
+  opacity: 1;
+}
+.amazing-img__img {
+  background: url("../img/IMG_0339.PNG") no-repeat center top;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+.amazing-img__img p {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 200px;
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
